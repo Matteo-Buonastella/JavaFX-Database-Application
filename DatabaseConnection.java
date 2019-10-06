@@ -6,7 +6,7 @@ public class DatabaseConnection {
 
     public  Connection getConnection() throws Exception{
         try {
-            myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/seriea", "root", "looser11");
+            myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/seriea", "root", "password");
             System.out.println("Connected to Database");
         } catch (Exception e){
             System.out.println("Error " + e);
